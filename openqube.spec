@@ -7,6 +7,7 @@ License:	BSD
 Group:		Libraries
 Source0:	https://github.com/OpenChemistry/openqube/archive/%{version}.tar.gz
 # Source0-md5:	c7939f66b0ab8311e5482cd93aa44ef4
+Patch0:		%{name}-lib.patch
 URL:		http://wiki.openchemistry.org/OpenQube
 BuildRequires:	QtCore-devel >= 4.6
 BuildRequires:	cmake >= 2.8
@@ -42,6 +43,7 @@ Pliki nagłówkowe biblioteki OpenQube.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %cmake .

@@ -1,0 +1,11 @@
+--- openqube-0.1.0/CMakeLists.txt.orig	2012-01-04 15:40:07.000000000 +0100
++++ openqube-0.1.0/CMakeLists.txt	2012-12-24 23:03:50.002567133 +0100
+@@ -15,7 +15,7 @@
+   "${OpenQube_VERSION_MAJOR}.${OpenQube_VERSION_MINOR}.${OpenQube_VERSION_PATCH}")
+ 
+ set(INC_INSTALL_DIR          "include")
+-set(LIB_INSTALL_DIR          "lib")
++set(LIB_INSTALL_DIR          "lib${LIB_SUFFIX}")
+ set(BIN_INSTALL_DIR          "bin")
+ 
+ # Use an exports file for Libraries targets
