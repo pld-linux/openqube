@@ -9,3 +9,14 @@
  set(BIN_INSTALL_DIR          "bin")
  
  # Use an exports file for Libraries targets
+--- openqube-0.1.0/cmake/OpenQubeConfig.cmake.in.orig	2012-01-04 15:40:07.000000000 +0100
++++ openqube-0.1.0/cmake/OpenQubeConfig.cmake.in	2012-12-28 18:35:00.465699937 +0100
+@@ -10,7 +10,7 @@
+ 
+ set(OpenQube_INSTALL_PREFIX  "@CMAKE_INSTALL_PREFIX@")
+ set(OpenQube_INCLUDE_DIRS    "${OpenQube_INSTALL_PREFIX}/@INC_INSTALL_DIR@")
+-set(OpenQube_LIBRARY_DIRS    "${OpenQube_INSTALL_PREFIX}/@LIB_INSTALL_DIR@@LIB_SUFFIX@")
++set(OpenQube_LIBRARY_DIRS    "${OpenQube_INSTALL_PREFIX}/@LIB_INSTALL_DIR@")
+ set(OpenQube_BIN_DIRS        "${OpenQube_INSTALL_PREFIX}/@BIN_INSTALL_DIR@")
+ 
+ if(NOT TARGET OpenQube)

@@ -2,7 +2,7 @@ Summary:	OpenQube - library for reading quantum chemistry data files
 Summary(pl.UTF-8):	OpenQube - biblioteka do odczytu plików danych chemii kwantowej
 Name:		openqube
 Version:	0.1.0
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries
 Source0:	https://github.com/OpenChemistry/openqube/archive/%{version}.tar.gz
